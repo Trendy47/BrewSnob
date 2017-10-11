@@ -1,0 +1,35 @@
+{
+	"recipes": 
+	[
+        {
+            "name":"Cascade IPA",
+            "ingredients":"11.5 lb American 2-Row\\n0.5 lb Caramel Malt 60L\\n6.0 oz Cascade (US)\\nAmerican Ale II",
+            "og":"1.068",
+            "fg":"1.018",
+            "abv":"6.6%",
+            "ibu":"68",
+            "srm":"6",
+            "directions":"Add 2.5 oz of Casacade Hops at 60 minutes boil time. At 30 minutes of boil time at 1.0 oz of Cascade Hops. Continue adding 1.0 oz of Cascade Hops at 15 minutes and at flame out of boil time.\\n\\nFerment in your primary for max of 2 weeks, then dry hop the last 0.5 oz of Cascade Hops when you rack to the secondary. Beer is then ready in 7 days."
+        },
+        {
+            "name":"3 Floyds Zombie Dust Clone",
+            "ingredients":"12.75lb 2-Row (US)\\n1.25lb Munich Malt 10L\\n0.5lb CARAPILS\\n0.5lb Caramel Malt 60L\\n10oz Citra (US)\\n English Ale Yeast",
+            "og":"1.070",
+            "fg":"1.018",
+            "abv":"6.9%",
+            "ibu":"53",
+            "srm":"8",
+            "directions":"Start with 7.8 gal of water for BIAB full volume mash. For the water profile in my area, 4g gypsum, 4g calcium chloride, 2g epsom salt to water before heating. 1mL of lactic acid (88%) might also be necessary to bring down pH. Heat water to 159F for strike. Mash at 152-153 for 75-90 minutes, stirring every 15 mins until converted. Heat to 170 F and stir vigorously before pulling the bag. As soon as the bag is pulled, add the first wort hopping and 10 drops of FermcapS. Proceed with recipe. Chill to <74 F before pitching. Ferment at 72 F and wait until primary fermentation is done before dry hopping.\\n\\nPost brew note #1: This beer is great. It's not bitter at all, but has a big hop nose and tastes of grapefruit and slightly mango. It's just a touch sweet and you could drink it all night.\\n\\nPost brew note #2: now that the batch is almost gone, while it's still delicious, I can say that the hops do fade rather quickly. I have changed the recipe to add an additional oz of Citra to the dry hop bill and split it; 2oz for a week in primary, rack to secondary with an additional 2oz for 7 days, and bottle IMMEDIATELY."
+        },
+		{
+			"name":"Sierra Nevada Ruthless Rye Clone",
+			"ingredients":"9.5 lb (4.31 kg) pale malt\\n1.5 lb (0.63 kg) rye malt\\n12.0 oz (340 g) 80° L crystal malt\\n1.0 oz (28 g) chocolate malt\\n 8-16 oz rice hulls (in mas - optional)\\n 1.0 oz (28 g) whole Bravo hops, 15% a.a (first world hops)\\n 1.0 oz (28 g) whole Chinook hops (0 min)\\n 0.5 oz (14 g) wholeAmarillo hops (0 min)\\n 0.5 oz (14 g) whole Columbus hops (0 min)\\n 1.5 oz (42 g) whole Citra hops (dry)\\n 0.5 oz (14 g) whole Columbus hops (dry)\\n 1.0 oz (28 g) whole Chinook hops (dr)\\n0.5 oz (14 g) whole Amarillo hops (dry)\\n Chico or California ale yeast\\n",
+			"og":"1.064",
+			"fg":"1.015",
+			"abv":"6.43%",
+			"ibu":"49",
+			"srm":"21",
+			"directions":"To brew this Ruthless Rye clone, mash grains at 154°F (68°C) for one hour.\\n Mash out at 162°F (72°C) for 10 minutes, then raise to 172°F (78°C) and\\n commence sparge. Boil for 90 minutes.\\n Use rice hulls if a rye-induced stuck sparge is a concern. Steep aroma hops for 5 minutes at knockout and proceed with wort chilling.\\n Ferment at 68°F (20°C) until finished, rack on to bagged, weighted dry hops and\\nhold for three days. Remove dry hops. Crash cool and condition the beer for at least a week before packaging."
+		}
+	]
+}

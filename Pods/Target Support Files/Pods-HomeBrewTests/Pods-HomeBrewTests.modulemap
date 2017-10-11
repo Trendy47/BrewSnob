@@ -1,0 +1,6 @@
+framework module Pods_HomeBrewTests {
+  umbrella header "Pods-HomeBrewTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
