@@ -7,71 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		04FF939E0A42A9D3C6CEBDA8A67EB323 = {
-			isa = PBXBuildFile;
-			fileRef = CEC22C73C1608DFA5D5D78BDCB218219;
-		};
-		13941951C0A5AC3C435D94A8914101E3 = {
-			isa = PBXBuildFile;
-			fileRef = B8FC888650FB85CE195B3B67742D243D;
-			settings = {
-				ATTRIBUTES = (
-					Public,
-				);
-			};
-		};
-		5C099C9E84561A98BB30F62089D66EF6 = {
-			isa = PBXBuildFile;
-			fileRef = 981E8E6690CF81ACABC3D2D61345BD93;
-		};
-		68B5F8866E61212E9F5D9A2259F2831C = {
-			isa = PBXBuildFile;
-			fileRef = CEC22C73C1608DFA5D5D78BDCB218219;
-		};
-		7D51CC2049AC40D4123C84AD8600B498 = {
-			isa = PBXBuildFile;
-			fileRef = F55925C52125AF6C8E8264953298AC2C;
-		};
-		895C321A652EEE237BFB28F0C9465286 = {
-			isa = PBXBuildFile;
-			fileRef = CAE7EE7657D55A521CD6D39E9C03AEAB;
-		};
-		C78B828FEE25D3AEEF8C9F74A1DF03E6 = {
-			isa = PBXBuildFile;
-			fileRef = DB93FD867687FC78C4010CA903718D97;
-			settings = {
-				ATTRIBUTES = (
-					Public,
-				);
-			};
-		};
-		D3827556CE910BEF22B0FCFF8800DDB6 = {
-			isa = PBXBuildFile;
-			fileRef = 1F8D9B0A430D5C61CAF730AEDB753BDD;
-		};
-		D48B60A462358FCF53B95416B5F3EFBB = {
-			isa = PBXBuildFile;
-			fileRef = 484CFEFA68C1936A86ED7E58BC2C6786;
-			settings = {
-				ATTRIBUTES = (
-					Public,
-				);
-			};
-		};
-		F01731DCBAFD421C79557348A3A7B39F = {
-			isa = PBXBuildFile;
-			fileRef = CEC22C73C1608DFA5D5D78BDCB218219;
-		};
-		F11C99ED321C32F764B572F539C1FCAD = {
-			isa = PBXBuildFile;
-			fileRef = 9C88930491A973BD975A51360689138D;
-		};
+		04FF939E0A42A9D3C6CEBDA8A67EB323 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		13941951C0A5AC3C435D94A8914101E3 /* Pods-HomeBrewTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B8FC888650FB85CE195B3B67742D243D /* Pods-HomeBrewTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5C099C9E84561A98BB30F62089D66EF6 /* Pods-HomeBrewTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 981E8E6690CF81ACABC3D2D61345BD93 /* Pods-HomeBrewTests-dummy.m */; };
+		68B5F8866E61212E9F5D9A2259F2831C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		7D51CC2049AC40D4123C84AD8600B498 /* Pods-HomeBrew-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F55925C52125AF6C8E8264953298AC2C /* Pods-HomeBrew-dummy.m */; };
+		895C321A652EEE237BFB28F0C9465286 /* SWXMLHash+TypeConversion.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE7EE7657D55A521CD6D39E9C03AEAB /* SWXMLHash+TypeConversion.swift */; };
+		C78B828FEE25D3AEEF8C9F74A1DF03E6 /* Pods-HomeBrew-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DB93FD867687FC78C4010CA903718D97 /* Pods-HomeBrew-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D3827556CE910BEF22B0FCFF8800DDB6 /* SWXMLHash.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8D9B0A430D5C61CAF730AEDB753BDD /* SWXMLHash.swift */; };
+		D48B60A462358FCF53B95416B5F3EFBB /* SWXMLHash-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 484CFEFA68C1936A86ED7E58BC2C6786 /* SWXMLHash-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F01731DCBAFD421C79557348A3A7B39F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		F11C99ED321C32F764B572F539C1FCAD /* SWXMLHash-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C88930491A973BD975A51360689138D /* SWXMLHash-dummy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		E39C404FF7813C4971DEF5B94E2E4685 = {
+		E39C404FF7813C4971DEF5B94E2E4685 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = EBCAA908CD0844A657F36CC65447DF82;
 			remoteInfo = SWXMLHash;
@@ -79,310 +31,106 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0153A73885F0BBF3331DF62EB8E576B1 = {
-			isa = PBXFileReference;
-			explicitFileType = wrapper.framework;
-			includeInIndex = 0;
-			name = Pods_HomeBrew.framework;
-			path = "Pods-HomeBrew.framework";
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		09944AC09542320BF46B795B785AA356 = {
-			isa = PBXFileReference;
-			includeInIndex = 1;
-			path = "Pods-HomeBrew.modulemap";
-			sourceTree = "<group>";
-		};
-		09D8AA2E5A76BB9FC519BFCB55B14D0E = {
-			isa = PBXFileReference;
-			includeInIndex = 1;
-			lastKnownFileType = text.script.sh;
-			path = "Pods-HomeBrew-resources.sh";
-			sourceTree = "<group>";
-		};
-		1F8D9B0A430D5C61CAF730AEDB753BDD = {
-			isa = PBXFileReference;
-			includeInIndex = 1;
-			lastKnownFileType = sourcecode.swift;
-			name = SWXMLHash.swift;
-			path = Source/SWXMLHash.swift;
-			sourceTree = "<group>";
-		};
-		2EE437489934AE0AB97E78EA662A1BB8 = {
-			isa = PBXFileReference;
-			includeInIndex = 1;
-			lastKnownFileType = text.xcconfig;
-			path = "Pods-HomeBrew.release.xcconfig";
-			sourceTree = "<group>";
-		};
-		45165116F2A7333B17971679B69D45EA = {
-			isa = PBXFileReference;
-			includeInIndex = 1;
-			lastKnownFileType = text;
-			path = "Pods-HomeBrew-acknowledgements.markdown";
-			sourceTree = "<group>";
-		};
-		484CFEFA68C1936A86ED7E58BC2C6786 = {
-			isa = PBXFileReference;
-			includeInIndex = 1;
-			lastKnownFileType = sourcecode.c.h;
-			path = "SWXMLHash-umbrella.h";
-			sourceTree = "<group>";
-		};
-		57E6217B848339A4E955BDBE2F18BC72 = {
-			isa = PBXFileReference;
-			includeInIndex = 1;
-			lastKnownFileType = text.xcconfig;
-			path = SWXMLHash.xcconfig;
-			sourceTree = "<group>";
-		};
-		6C7F4E889AA123E4EAF1E1F90599EC21 = {
-			isa = PBXFileReference;
-			includeInIndex = 1;
-			lastKnownFileType = text.xcconfig;
-			path = "Pods-HomeBrewTests.debug.xcconfig";
-			sourceTree = "<group>";
-		};
-		7B7F26053A54CF0143E9E1D1DC25CF9E = {
-			isa = PBXFileReference;
-			includeInIndex = 1;
-			lastKnownFileType = sourcecode.c.h;
-			path = "SWXMLHash-prefix.pch";
-			sourceTree = "<group>";
-		};
-		88F63D7150EB7CB2C0CA915A8C8FE68F = {
-			isa = PBXFileReference;
-			includeInIndex = 1;
-			path = SWXMLHash.modulemap;
-			sourceTree = "<group>";
-		};
-		8D6A5B759741E9544FCA7BA9D730F12D = {
-			isa = PBXFileReference;
-			includeInIndex = 1;
-			lastKnownFileType = text.script.sh;
-			path = "Pods-HomeBrewTests-resources.sh";
-			sourceTree = "<group>";
-		};
-		90A84C94FA8EF698AF2911D8E99B62E9 = {
-			isa = PBXFileReference;
-			includeInIndex = 1;
-			path = "Pods-HomeBrewTests.modulemap";
-			sourceTree = "<group>";
-		};
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 = {
-			isa = PBXFileReference;
-			explicitFileType = text.script.ruby;
-			includeInIndex = 1;
-			lastKnownFileType = text;
-			name = Podfile;
-			path = ../Podfile;
-			sourceTree = SOURCE_ROOT;
-			xcLanguageSpecificationIdentifier = xcode.lang.ruby;
-		};
-		95AD1A715A297C379C160282668EF97F = {
-			isa = PBXFileReference;
-			includeInIndex = 1;
-			lastKnownFileType = text.plist.xml;
-			path = Info.plist;
-			sourceTree = "<group>";
-		};
-		981E8E6690CF81ACABC3D2D61345BD93 = {
-			isa = PBXFileReference;
-			includeInIndex = 1;
-			lastKnownFileType = sourcecode.c.objc;
-			path = "Pods-HomeBrewTests-dummy.m";
-			sourceTree = "<group>";
-		};
-		98BA3FC96F739C00D2E57463D825ECE9 = {
-			isa = PBXFileReference;
-			includeInIndex = 1;
-			lastKnownFileType = text.plist.xml;
-			path = Info.plist;
-			sourceTree = "<group>";
-		};
-		9BD17EF89997D2DAE1BD57DCF65E725B = {
-			isa = PBXFileReference;
-			explicitFileType = wrapper.framework;
-			includeInIndex = 0;
-			name = SWXMLHash.framework;
-			path = SWXMLHash.framework;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		9C88930491A973BD975A51360689138D = {
-			isa = PBXFileReference;
-			includeInIndex = 1;
-			lastKnownFileType = sourcecode.c.objc;
-			path = "SWXMLHash-dummy.m";
-			sourceTree = "<group>";
-		};
-		A92F9C9496BF803747FFCF923556C8DB = {
-			isa = PBXFileReference;
-			explicitFileType = wrapper.framework;
-			includeInIndex = 0;
-			name = Pods_HomeBrewTests.framework;
-			path = "Pods-HomeBrewTests.framework";
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		AD99E518110050041193E8F1C4F0AFC0 = {
-			isa = PBXFileReference;
-			includeInIndex = 1;
-			lastKnownFileType = text.xcconfig;
-			path = "Pods-HomeBrew.debug.xcconfig";
-			sourceTree = "<group>";
-		};
-		B8FC888650FB85CE195B3B67742D243D = {
-			isa = PBXFileReference;
-			includeInIndex = 1;
-			lastKnownFileType = sourcecode.c.h;
-			path = "Pods-HomeBrewTests-umbrella.h";
-			sourceTree = "<group>";
-		};
-		C0716B813B676596CFD7F16C45D2338D = {
-			isa = PBXFileReference;
-			includeInIndex = 1;
-			lastKnownFileType = text.plist.xml;
-			path = "Pods-HomeBrew-acknowledgements.plist";
-			sourceTree = "<group>";
-		};
-		C5D55762D878AECC2EEC6CE1AA1304EA = {
-			isa = PBXFileReference;
-			includeInIndex = 1;
-			lastKnownFileType = text.plist.xml;
-			path = "Pods-HomeBrewTests-acknowledgements.plist";
-			sourceTree = "<group>";
-		};
-		CAE7EE7657D55A521CD6D39E9C03AEAB = {
-			isa = PBXFileReference;
-			includeInIndex = 1;
-			lastKnownFileType = sourcecode.swift;
-			name = "SWXMLHash+TypeConversion.swift";
-			path = "Source/SWXMLHash+TypeConversion.swift";
-			sourceTree = "<group>";
-		};
-		CEC22C73C1608DFA5D5D78BDCB218219 = {
-			isa = PBXFileReference;
-			lastKnownFileType = wrapper.framework;
-			name = Foundation.framework;
-			path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework;
-			sourceTree = DEVELOPER_DIR;
-		};
-		D2754129507A9AF7923DDA62D0902206 = {
-			isa = PBXFileReference;
-			includeInIndex = 1;
-			lastKnownFileType = text;
-			path = "Pods-HomeBrewTests-acknowledgements.markdown";
-			sourceTree = "<group>";
-		};
-		DB86095B1DA7736433C614D624A6A8F1 = {
-			isa = PBXFileReference;
-			includeInIndex = 1;
-			lastKnownFileType = text.script.sh;
-			path = "Pods-HomeBrew-frameworks.sh";
-			sourceTree = "<group>";
-		};
-		DB93FD867687FC78C4010CA903718D97 = {
-			isa = PBXFileReference;
-			includeInIndex = 1;
-			lastKnownFileType = sourcecode.c.h;
-			path = "Pods-HomeBrew-umbrella.h";
-			sourceTree = "<group>";
-		};
-		E03D6F487157E5CA6E1A61AD60DD104A = {
-			isa = PBXFileReference;
-			includeInIndex = 1;
-			lastKnownFileType = text.xcconfig;
-			path = "Pods-HomeBrewTests.release.xcconfig";
-			sourceTree = "<group>";
-		};
-		E14DB3D4AF8831FD59BC905AE0EA9957 = {
-			isa = PBXFileReference;
-			includeInIndex = 1;
-			lastKnownFileType = text.plist.xml;
-			path = Info.plist;
-			sourceTree = "<group>";
-		};
-		F55925C52125AF6C8E8264953298AC2C = {
-			isa = PBXFileReference;
-			includeInIndex = 1;
-			lastKnownFileType = sourcecode.c.objc;
-			path = "Pods-HomeBrew-dummy.m";
-			sourceTree = "<group>";
-		};
-		F7CAB0987A35EBE30A6E07663342E5B2 = {
-			isa = PBXFileReference;
-			includeInIndex = 1;
-			lastKnownFileType = text.script.sh;
-			path = "Pods-HomeBrewTests-frameworks.sh";
-			sourceTree = "<group>";
-		};
+		0153A73885F0BBF3331DF62EB8E576B1 /* Pods_HomeBrew.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HomeBrew.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		09944AC09542320BF46B795B785AA356 /* Pods-HomeBrew.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-HomeBrew.modulemap"; sourceTree = "<group>"; };
+		09D8AA2E5A76BB9FC519BFCB55B14D0E /* Pods-HomeBrew-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-HomeBrew-resources.sh"; sourceTree = "<group>"; };
+		1F8D9B0A430D5C61CAF730AEDB753BDD /* SWXMLHash.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SWXMLHash.swift; path = Source/SWXMLHash.swift; sourceTree = "<group>"; };
+		2EE437489934AE0AB97E78EA662A1BB8 /* Pods-HomeBrew.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HomeBrew.release.xcconfig"; sourceTree = "<group>"; };
+		45165116F2A7333B17971679B69D45EA /* Pods-HomeBrew-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-HomeBrew-acknowledgements.markdown"; sourceTree = "<group>"; };
+		484CFEFA68C1936A86ED7E58BC2C6786 /* SWXMLHash-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SWXMLHash-umbrella.h"; sourceTree = "<group>"; };
+		57E6217B848339A4E955BDBE2F18BC72 /* SWXMLHash.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SWXMLHash.xcconfig; sourceTree = "<group>"; };
+		6C7F4E889AA123E4EAF1E1F90599EC21 /* Pods-HomeBrewTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HomeBrewTests.debug.xcconfig"; sourceTree = "<group>"; };
+		7B7F26053A54CF0143E9E1D1DC25CF9E /* SWXMLHash-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SWXMLHash-prefix.pch"; sourceTree = "<group>"; };
+		88F63D7150EB7CB2C0CA915A8C8FE68F /* SWXMLHash.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = SWXMLHash.modulemap; sourceTree = "<group>"; };
+		8D6A5B759741E9544FCA7BA9D730F12D /* Pods-HomeBrewTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-HomeBrewTests-resources.sh"; sourceTree = "<group>"; };
+		90A84C94FA8EF698AF2911D8E99B62E9 /* Pods-HomeBrewTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-HomeBrewTests.modulemap"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		95AD1A715A297C379C160282668EF97F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		981E8E6690CF81ACABC3D2D61345BD93 /* Pods-HomeBrewTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-HomeBrewTests-dummy.m"; sourceTree = "<group>"; };
+		98BA3FC96F739C00D2E57463D825ECE9 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9BD17EF89997D2DAE1BD57DCF65E725B /* SWXMLHash.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SWXMLHash.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9C88930491A973BD975A51360689138D /* SWXMLHash-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SWXMLHash-dummy.m"; sourceTree = "<group>"; };
+		A92F9C9496BF803747FFCF923556C8DB /* Pods_HomeBrewTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HomeBrewTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD99E518110050041193E8F1C4F0AFC0 /* Pods-HomeBrew.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HomeBrew.debug.xcconfig"; sourceTree = "<group>"; };
+		B8FC888650FB85CE195B3B67742D243D /* Pods-HomeBrewTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-HomeBrewTests-umbrella.h"; sourceTree = "<group>"; };
+		C0716B813B676596CFD7F16C45D2338D /* Pods-HomeBrew-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HomeBrew-acknowledgements.plist"; sourceTree = "<group>"; };
+		C5D55762D878AECC2EEC6CE1AA1304EA /* Pods-HomeBrewTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HomeBrewTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		CAE7EE7657D55A521CD6D39E9C03AEAB /* SWXMLHash+TypeConversion.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "SWXMLHash+TypeConversion.swift"; path = "Source/SWXMLHash+TypeConversion.swift"; sourceTree = "<group>"; };
+		CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		D2754129507A9AF7923DDA62D0902206 /* Pods-HomeBrewTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-HomeBrewTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		DB86095B1DA7736433C614D624A6A8F1 /* Pods-HomeBrew-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-HomeBrew-frameworks.sh"; sourceTree = "<group>"; };
+		DB93FD867687FC78C4010CA903718D97 /* Pods-HomeBrew-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-HomeBrew-umbrella.h"; sourceTree = "<group>"; };
+		E03D6F487157E5CA6E1A61AD60DD104A /* Pods-HomeBrewTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HomeBrewTests.release.xcconfig"; sourceTree = "<group>"; };
+		E14DB3D4AF8831FD59BC905AE0EA9957 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F55925C52125AF6C8E8264953298AC2C /* Pods-HomeBrew-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-HomeBrew-dummy.m"; sourceTree = "<group>"; };
+		F7CAB0987A35EBE30A6E07663342E5B2 /* Pods-HomeBrewTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-HomeBrewTests-frameworks.sh"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		50C622BCA86DE87C3AF4F7673D271BEA = {
+		50C622BCA86DE87C3AF4F7673D271BEA /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F01731DCBAFD421C79557348A3A7B39F,
+				F01731DCBAFD421C79557348A3A7B39F /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E076E5DCE20F4D32F1253572B4E5FA3D = {
+		E076E5DCE20F4D32F1253572B4E5FA3D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				04FF939E0A42A9D3C6CEBDA8A67EB323,
+				04FF939E0A42A9D3C6CEBDA8A67EB323 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E09F26AD0A9FFAA98EC57247AC356044 = {
+		E09F26AD0A9FFAA98EC57247AC356044 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				68B5F8866E61212E9F5D9A2259F2831C,
+				68B5F8866E61212E9F5D9A2259F2831C /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		030971845A9690039BD4C4A72336E004 = {
+		030971845A9690039BD4C4A72336E004 /* SWXMLHash */ = {
 			isa = PBXGroup;
 			children = (
-				1F8D9B0A430D5C61CAF730AEDB753BDD,
-				CAE7EE7657D55A521CD6D39E9C03AEAB,
-				2DD94BB51DB72757620960724B88B021,
+				1F8D9B0A430D5C61CAF730AEDB753BDD /* SWXMLHash.swift */,
+				CAE7EE7657D55A521CD6D39E9C03AEAB /* SWXMLHash+TypeConversion.swift */,
+				2DD94BB51DB72757620960724B88B021 /* Support Files */,
 			);
-			name = SWXMLHash;
 			path = SWXMLHash;
 			sourceTree = "<group>";
 		};
-		1C9146202ED4A428813D79D20A220289 = {
+		1C9146202ED4A428813D79D20A220289 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				99AFCB4C3DE43C8D31341464662E3066,
-				D60ACC89FC8737781A431FFE349E7C01,
+				99AFCB4C3DE43C8D31341464662E3066 /* Pods-HomeBrew */,
+				D60ACC89FC8737781A431FFE349E7C01 /* Pods-HomeBrewTests */,
 			);
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		2DD94BB51DB72757620960724B88B021 = {
+		2DD94BB51DB72757620960724B88B021 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				95AD1A715A297C379C160282668EF97F,
-				88F63D7150EB7CB2C0CA915A8C8FE68F,
-				57E6217B848339A4E955BDBE2F18BC72,
-				9C88930491A973BD975A51360689138D,
-				7B7F26053A54CF0143E9E1D1DC25CF9E,
-				484CFEFA68C1936A86ED7E58BC2C6786,
+				95AD1A715A297C379C160282668EF97F /* Info.plist */,
+				88F63D7150EB7CB2C0CA915A8C8FE68F /* SWXMLHash.modulemap */,
+				57E6217B848339A4E955BDBE2F18BC72 /* SWXMLHash.xcconfig */,
+				9C88930491A973BD975A51360689138D /* SWXMLHash-dummy.m */,
+				7B7F26053A54CF0143E9E1D1DC25CF9E /* SWXMLHash-prefix.pch */,
+				484CFEFA68C1936A86ED7E58BC2C6786 /* SWXMLHash-umbrella.h */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/SWXMLHash";
 			sourceTree = "<group>";
 		};
-		3DCAB2B7CDE207B3958B6CB957FCC758 = {
+		3DCAB2B7CDE207B3958B6CB957FCC758 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				CEC22C73C1608DFA5D5D78BDCB218219,
+				CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */,
 			);
 			name = iOS;
 			sourceTree = "<group>";
@@ -390,72 +138,72 @@
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
-				93A4A3777CF96A4AAC1D13BA6DCCEA73,
-				BC3CA7F9E30CC8F7E2DD044DD34432FC,
-				F038B086B06CA3335C9E632B7286AE07,
-				DEF617BFCB2B882C94514355FC39266B,
-				1C9146202ED4A428813D79D20A220289,
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				F038B086B06CA3335C9E632B7286AE07 /* Pods */,
+				DEF617BFCB2B882C94514355FC39266B /* Products */,
+				1C9146202ED4A428813D79D20A220289 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		99AFCB4C3DE43C8D31341464662E3066 = {
+		99AFCB4C3DE43C8D31341464662E3066 /* Pods-HomeBrew */ = {
 			isa = PBXGroup;
 			children = (
-				98BA3FC96F739C00D2E57463D825ECE9,
-				09944AC09542320BF46B795B785AA356,
-				45165116F2A7333B17971679B69D45EA,
-				C0716B813B676596CFD7F16C45D2338D,
-				F55925C52125AF6C8E8264953298AC2C,
-				DB86095B1DA7736433C614D624A6A8F1,
-				09D8AA2E5A76BB9FC519BFCB55B14D0E,
-				DB93FD867687FC78C4010CA903718D97,
-				AD99E518110050041193E8F1C4F0AFC0,
-				2EE437489934AE0AB97E78EA662A1BB8,
+				98BA3FC96F739C00D2E57463D825ECE9 /* Info.plist */,
+				09944AC09542320BF46B795B785AA356 /* Pods-HomeBrew.modulemap */,
+				45165116F2A7333B17971679B69D45EA /* Pods-HomeBrew-acknowledgements.markdown */,
+				C0716B813B676596CFD7F16C45D2338D /* Pods-HomeBrew-acknowledgements.plist */,
+				F55925C52125AF6C8E8264953298AC2C /* Pods-HomeBrew-dummy.m */,
+				DB86095B1DA7736433C614D624A6A8F1 /* Pods-HomeBrew-frameworks.sh */,
+				09D8AA2E5A76BB9FC519BFCB55B14D0E /* Pods-HomeBrew-resources.sh */,
+				DB93FD867687FC78C4010CA903718D97 /* Pods-HomeBrew-umbrella.h */,
+				AD99E518110050041193E8F1C4F0AFC0 /* Pods-HomeBrew.debug.xcconfig */,
+				2EE437489934AE0AB97E78EA662A1BB8 /* Pods-HomeBrew.release.xcconfig */,
 			);
 			name = "Pods-HomeBrew";
 			path = "Target Support Files/Pods-HomeBrew";
 			sourceTree = "<group>";
 		};
-		BC3CA7F9E30CC8F7E2DD044DD34432FC = {
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				3DCAB2B7CDE207B3958B6CB957FCC758,
+				3DCAB2B7CDE207B3958B6CB957FCC758 /* iOS */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		D60ACC89FC8737781A431FFE349E7C01 = {
+		D60ACC89FC8737781A431FFE349E7C01 /* Pods-HomeBrewTests */ = {
 			isa = PBXGroup;
 			children = (
-				E14DB3D4AF8831FD59BC905AE0EA9957,
-				90A84C94FA8EF698AF2911D8E99B62E9,
-				D2754129507A9AF7923DDA62D0902206,
-				C5D55762D878AECC2EEC6CE1AA1304EA,
-				981E8E6690CF81ACABC3D2D61345BD93,
-				F7CAB0987A35EBE30A6E07663342E5B2,
-				8D6A5B759741E9544FCA7BA9D730F12D,
-				B8FC888650FB85CE195B3B67742D243D,
-				6C7F4E889AA123E4EAF1E1F90599EC21,
-				E03D6F487157E5CA6E1A61AD60DD104A,
+				E14DB3D4AF8831FD59BC905AE0EA9957 /* Info.plist */,
+				90A84C94FA8EF698AF2911D8E99B62E9 /* Pods-HomeBrewTests.modulemap */,
+				D2754129507A9AF7923DDA62D0902206 /* Pods-HomeBrewTests-acknowledgements.markdown */,
+				C5D55762D878AECC2EEC6CE1AA1304EA /* Pods-HomeBrewTests-acknowledgements.plist */,
+				981E8E6690CF81ACABC3D2D61345BD93 /* Pods-HomeBrewTests-dummy.m */,
+				F7CAB0987A35EBE30A6E07663342E5B2 /* Pods-HomeBrewTests-frameworks.sh */,
+				8D6A5B759741E9544FCA7BA9D730F12D /* Pods-HomeBrewTests-resources.sh */,
+				B8FC888650FB85CE195B3B67742D243D /* Pods-HomeBrewTests-umbrella.h */,
+				6C7F4E889AA123E4EAF1E1F90599EC21 /* Pods-HomeBrewTests.debug.xcconfig */,
+				E03D6F487157E5CA6E1A61AD60DD104A /* Pods-HomeBrewTests.release.xcconfig */,
 			);
 			name = "Pods-HomeBrewTests";
 			path = "Target Support Files/Pods-HomeBrewTests";
 			sourceTree = "<group>";
 		};
-		DEF617BFCB2B882C94514355FC39266B = {
+		DEF617BFCB2B882C94514355FC39266B /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				0153A73885F0BBF3331DF62EB8E576B1,
-				A92F9C9496BF803747FFCF923556C8DB,
-				9BD17EF89997D2DAE1BD57DCF65E725B,
+				0153A73885F0BBF3331DF62EB8E576B1 /* Pods_HomeBrew.framework */,
+				A92F9C9496BF803747FFCF923556C8DB /* Pods_HomeBrewTests.framework */,
+				9BD17EF89997D2DAE1BD57DCF65E725B /* SWXMLHash.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		F038B086B06CA3335C9E632B7286AE07 = {
+		F038B086B06CA3335C9E632B7286AE07 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				030971845A9690039BD4C4A72336E004,
+				030971845A9690039BD4C4A72336E004 /* SWXMLHash */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -463,58 +211,58 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		14E440C7EC9F9D44CB4D4E0682848142 = {
+		14E440C7EC9F9D44CB4D4E0682848142 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				13941951C0A5AC3C435D94A8914101E3,
+				13941951C0A5AC3C435D94A8914101E3 /* Pods-HomeBrewTests-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		1A399332C72E7D5EF0E0D9CDEF1663A9 = {
+		1A399332C72E7D5EF0E0D9CDEF1663A9 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C78B828FEE25D3AEEF8C9F74A1DF03E6,
+				C78B828FEE25D3AEEF8C9F74A1DF03E6 /* Pods-HomeBrew-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		1F81B2B8EC2A921285681E4C7BC16C9B = {
+		1F81B2B8EC2A921285681E4C7BC16C9B /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D48B60A462358FCF53B95416B5F3EFBB,
+				D48B60A462358FCF53B95416B5F3EFBB /* SWXMLHash-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		5FBE95C693B0B6B37109EB28D41544ED = {
+		5FBE95C693B0B6B37109EB28D41544ED /* Pods-HomeBrew */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4C67D4BBF0786EAC9873F34DA1F87844;
+			buildConfigurationList = 4C67D4BBF0786EAC9873F34DA1F87844 /* Build configuration list for PBXNativeTarget "Pods-HomeBrew" */;
 			buildPhases = (
-				F2CC2859918BE3E27854365787EF8C5D,
-				E09F26AD0A9FFAA98EC57247AC356044,
-				1A399332C72E7D5EF0E0D9CDEF1663A9,
+				F2CC2859918BE3E27854365787EF8C5D /* Sources */,
+				E09F26AD0A9FFAA98EC57247AC356044 /* Frameworks */,
+				1A399332C72E7D5EF0E0D9CDEF1663A9 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				95CB4062AF66B850AD3CFE1C34BBA904,
+				95CB4062AF66B850AD3CFE1C34BBA904 /* PBXTargetDependency */,
 			);
 			name = "Pods-HomeBrew";
 			productName = "Pods-HomeBrew";
-			productReference = 0153A73885F0BBF3331DF62EB8E576B1;
+			productReference = 0153A73885F0BBF3331DF62EB8E576B1 /* Pods_HomeBrew.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		B71F8CC7D9268FF0A292094BCA5B5ADA = {
+		B71F8CC7D9268FF0A292094BCA5B5ADA /* Pods-HomeBrewTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B7F19721C5120DD649454771B5C5297D;
+			buildConfigurationList = B7F19721C5120DD649454771B5C5297D /* Build configuration list for PBXNativeTarget "Pods-HomeBrewTests" */;
 			buildPhases = (
-				5EBDAA1C0A3C371936E5E515A571AD7C,
-				E076E5DCE20F4D32F1253572B4E5FA3D,
-				14E440C7EC9F9D44CB4D4E0682848142,
+				5EBDAA1C0A3C371936E5E515A571AD7C /* Sources */,
+				E076E5DCE20F4D32F1253572B4E5FA3D /* Frameworks */,
+				14E440C7EC9F9D44CB4D4E0682848142 /* Headers */,
 			);
 			buildRules = (
 			);
@@ -522,16 +270,16 @@
 			);
 			name = "Pods-HomeBrewTests";
 			productName = "Pods-HomeBrewTests";
-			productReference = A92F9C9496BF803747FFCF923556C8DB;
+			productReference = A92F9C9496BF803747FFCF923556C8DB /* Pods_HomeBrewTests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		EBCAA908CD0844A657F36CC65447DF82 = {
+		EBCAA908CD0844A657F36CC65447DF82 /* SWXMLHash */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CDD2A4A7C65F53C90992A8FCFE06C92E;
+			buildConfigurationList = CDD2A4A7C65F53C90992A8FCFE06C92E /* Build configuration list for PBXNativeTarget "SWXMLHash" */;
 			buildPhases = (
-				0FF2C3E9225B45AC52ACB375196D1D9D,
-				50C622BCA86DE87C3AF4F7673D271BEA,
-				1F81B2B8EC2A921285681E4C7BC16C9B,
+				0FF2C3E9225B45AC52ACB375196D1D9D /* Sources */,
+				50C622BCA86DE87C3AF4F7673D271BEA /* Frameworks */,
+				1F81B2B8EC2A921285681E4C7BC16C9B /* Headers */,
 			);
 			buildRules = (
 			);
@@ -539,19 +287,24 @@
 			);
 			name = SWXMLHash;
 			productName = SWXMLHash;
-			productReference = 9BD17EF89997D2DAE1BD57DCF65E725B;
+			productReference = 9BD17EF89997D2DAE1BD57DCF65E725B /* SWXMLHash.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		D41D8CD98F00B204E9800998ECF8427E = {
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
 				LastUpgradeCheck = 0700;
+				TargetAttributes = {
+					EBCAA908CD0844A657F36CC65447DF82 = {
+						LastSwiftMigration = 0900;
+					};
+				};
 			};
-			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504;
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -559,61 +312,59 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = DEF617BFCB2B882C94514355FC39266B;
+			productRefGroup = DEF617BFCB2B882C94514355FC39266B /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-			);
 			projectRoot = "";
 			targets = (
-				5FBE95C693B0B6B37109EB28D41544ED,
-				B71F8CC7D9268FF0A292094BCA5B5ADA,
-				EBCAA908CD0844A657F36CC65447DF82,
+				5FBE95C693B0B6B37109EB28D41544ED /* Pods-HomeBrew */,
+				B71F8CC7D9268FF0A292094BCA5B5ADA /* Pods-HomeBrewTests */,
+				EBCAA908CD0844A657F36CC65447DF82 /* SWXMLHash */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		0FF2C3E9225B45AC52ACB375196D1D9D = {
+		0FF2C3E9225B45AC52ACB375196D1D9D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				895C321A652EEE237BFB28F0C9465286,
-				F11C99ED321C32F764B572F539C1FCAD,
-				D3827556CE910BEF22B0FCFF8800DDB6,
+				895C321A652EEE237BFB28F0C9465286 /* SWXMLHash+TypeConversion.swift in Sources */,
+				F11C99ED321C32F764B572F539C1FCAD /* SWXMLHash-dummy.m in Sources */,
+				D3827556CE910BEF22B0FCFF8800DDB6 /* SWXMLHash.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5EBDAA1C0A3C371936E5E515A571AD7C = {
+		5EBDAA1C0A3C371936E5E515A571AD7C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5C099C9E84561A98BB30F62089D66EF6,
+				5C099C9E84561A98BB30F62089D66EF6 /* Pods-HomeBrewTests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F2CC2859918BE3E27854365787EF8C5D = {
+		F2CC2859918BE3E27854365787EF8C5D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7D51CC2049AC40D4123C84AD8600B498,
+				7D51CC2049AC40D4123C84AD8600B498 /* Pods-HomeBrew-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		95CB4062AF66B850AD3CFE1C34BBA904 = {
+		95CB4062AF66B850AD3CFE1C34BBA904 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = SWXMLHash;
-			target = EBCAA908CD0844A657F36CC65447DF82;
-			targetProxy = E39C404FF7813C4971DEF5B94E2E4685;
+			target = EBCAA908CD0844A657F36CC65447DF82 /* SWXMLHash */;
+			targetProxy = E39C404FF7813C4971DEF5B94E2E4685 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		3CE8BF18F413017E8EC6FD33462EFDA9 = {
+		3CE8BF18F413017E8EC6FD33462EFDA9 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 57E6217B848339A4E955BDBE2F18BC72;
+			baseConfigurationReference = 57E6217B848339A4E955BDBE2F18BC72 /* SWXMLHash.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -628,11 +379,7 @@
 				INFOPLIST_FILE = "Target Support Files/SWXMLHash/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/SWXMLHash/SWXMLHash.modulemap";
 				MTL_ENABLE_DEBUG_INFO = YES;
 				PRODUCT_NAME = SWXMLHash;
@@ -645,7 +392,7 @@
 			};
 			name = Debug;
 		};
-		47BEF9D903506B003EA5C2B249729489 = {
+		47BEF9D903506B003EA5C2B249729489 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -687,9 +434,9 @@
 			};
 			name = Debug;
 		};
-		55B1FC61FB649894BECE3A612B090C12 = {
+		55B1FC61FB649894BECE3A612B090C12 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = AD99E518110050041193E8F1C4F0AFC0;
+			baseConfigurationReference = AD99E518110050041193E8F1C4F0AFC0 /* Pods-HomeBrew.debug.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -703,11 +450,7 @@
 				INFOPLIST_FILE = "Target Support Files/Pods-HomeBrew/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-HomeBrew/Pods-HomeBrew.modulemap";
 				MTL_ENABLE_DEBUG_INFO = YES;
@@ -725,9 +468,9 @@
 			};
 			name = Debug;
 		};
-		777801A2169C97B0D4CF7091CF846275 = {
+		777801A2169C97B0D4CF7091CF846275 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 57E6217B848339A4E955BDBE2F18BC72;
+			baseConfigurationReference = 57E6217B848339A4E955BDBE2F18BC72 /* SWXMLHash.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -742,11 +485,7 @@
 				INFOPLIST_FILE = "Target Support Files/SWXMLHash/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/SWXMLHash/SWXMLHash.modulemap";
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_NAME = SWXMLHash;
@@ -758,9 +497,9 @@
 			};
 			name = Release;
 		};
-		9472700CCF39EC4FB6FF66744F34FF4D = {
+		9472700CCF39EC4FB6FF66744F34FF4D /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6C7F4E889AA123E4EAF1E1F90599EC21;
+			baseConfigurationReference = 6C7F4E889AA123E4EAF1E1F90599EC21 /* Pods-HomeBrewTests.debug.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -774,11 +513,7 @@
 				INFOPLIST_FILE = "Target Support Files/Pods-HomeBrewTests/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-HomeBrewTests/Pods-HomeBrewTests.modulemap";
 				MTL_ENABLE_DEBUG_INFO = YES;
@@ -795,7 +530,7 @@
 			};
 			name = Debug;
 		};
-		AAF678CED40D3499169D10F63CA0719E = {
+		AAF678CED40D3499169D10F63CA0719E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -833,9 +568,9 @@
 			};
 			name = Release;
 		};
-		E4E20B449574E993A8C839A106630129 = {
+		E4E20B449574E993A8C839A106630129 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2EE437489934AE0AB97E78EA662A1BB8;
+			baseConfigurationReference = 2EE437489934AE0AB97E78EA662A1BB8 /* Pods-HomeBrew.release.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -849,11 +584,7 @@
 				INFOPLIST_FILE = "Target Support Files/Pods-HomeBrew/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-HomeBrew/Pods-HomeBrew.modulemap";
 				MTL_ENABLE_DEBUG_INFO = NO;
@@ -870,9 +601,9 @@
 			};
 			name = Release;
 		};
-		E890B06D66AF2E8A76CDB67554077C2B = {
+		E890B06D66AF2E8A76CDB67554077C2B /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E03D6F487157E5CA6E1A61AD60DD104A;
+			baseConfigurationReference = E03D6F487157E5CA6E1A61AD60DD104A /* Pods-HomeBrewTests.release.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -886,11 +617,7 @@
 				INFOPLIST_FILE = "Target Support Files/Pods-HomeBrewTests/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-HomeBrewTests/Pods-HomeBrewTests.modulemap";
 				MTL_ENABLE_DEBUG_INFO = NO;
@@ -910,43 +637,43 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2D8E8EC45A3A1A1D94AE762CB5028504 = {
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				47BEF9D903506B003EA5C2B249729489,
-				AAF678CED40D3499169D10F63CA0719E,
+				47BEF9D903506B003EA5C2B249729489 /* Debug */,
+				AAF678CED40D3499169D10F63CA0719E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4C67D4BBF0786EAC9873F34DA1F87844 = {
+		4C67D4BBF0786EAC9873F34DA1F87844 /* Build configuration list for PBXNativeTarget "Pods-HomeBrew" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				55B1FC61FB649894BECE3A612B090C12,
-				E4E20B449574E993A8C839A106630129,
+				55B1FC61FB649894BECE3A612B090C12 /* Debug */,
+				E4E20B449574E993A8C839A106630129 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B7F19721C5120DD649454771B5C5297D = {
+		B7F19721C5120DD649454771B5C5297D /* Build configuration list for PBXNativeTarget "Pods-HomeBrewTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				9472700CCF39EC4FB6FF66744F34FF4D,
-				E890B06D66AF2E8A76CDB67554077C2B,
+				9472700CCF39EC4FB6FF66744F34FF4D /* Debug */,
+				E890B06D66AF2E8A76CDB67554077C2B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CDD2A4A7C65F53C90992A8FCFE06C92E = {
+		CDD2A4A7C65F53C90992A8FCFE06C92E /* Build configuration list for PBXNativeTarget "SWXMLHash" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				3CE8BF18F413017E8EC6FD33462EFDA9,
-				777801A2169C97B0D4CF7091CF846275,
+				3CE8BF18F413017E8EC6FD33462EFDA9 /* Debug */,
+				777801A2169C97B0D4CF7091CF846275 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = D41D8CD98F00B204E9800998ECF8427E;
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 }
