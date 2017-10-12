@@ -126,11 +126,11 @@ class MashWaterViewController : UIViewController {
         let preBoilWortLit: Float = kettleloss * 3.78541
         
         // Results
-        self.totalLabel.text = NSString(format: "%.2f gal. / %.2f L.", totalWater, totalLit) as String
-        self.mashLabel.text = NSString(format: "%.2f gal / %.2f L.", mashwater, mashLit) as String
-        self.spargeLabel.text = NSString(format: "%.2f gal / %.2f L.", spargewater, spargeLit) as String
-        self.strikeTempLabel.text = NSString(format: "%.2f°F / %.2f°C", striketemp, strikeTempC) as String
-        self.preBoilWortLabel.text = NSString(format: "%.2f gal. / %.2f L.", kettleloss, preBoilWortLit) as String
+        self.totalLabel.text = String(format: "%.2f gal. / %.2f L.", totalWater, totalLit)
+        self.mashLabel.text = String(format: "%.2f gal / %.2f L.", mashwater, mashLit)
+        self.spargeLabel.text = String(format: "%.2f gal / %.2f L.", spargewater, spargeLit)
+        self.strikeTempLabel.text = String(format: "%.2f°F / %.2f°C", striketemp, strikeTempC)
+        self.preBoilWortLabel.text = String(format: "%.2f gal. / %.2f L.", kettleloss, preBoilWortLit)
         
         storeConstants()
     }

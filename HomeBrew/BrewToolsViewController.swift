@@ -14,7 +14,7 @@ class BrewToolsViewController : UIViewController {
     @IBOutlet weak var topView: UIView!
     @IBOutlet var tableView: UITableView!
     
-    var tools:[NSString] = []
+    var tools:[String] = []
     
     // #pragma mark - UIViewController Lifecycle
     override func viewDidLoad() {
@@ -53,9 +53,30 @@ class BrewToolsViewController : UIViewController {
     func tableView(_ tableView: UITableView, cellForRowAtIndexPath indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "brewToolsCell", for: indexPath) as! CustomTableViewCell
         
-        let tool = tools[(indexPath as NSIndexPath).row]
-        cell.useTool(tool)
+        let tool = tools[indexPath.row]
+        var imageName = ""
         
+        switch indexPath.row {
+        case 0:
+            imageName = "calculator.png"
+            break
+        case 1:
+            imageName = "hour_glass.png"
+            break
+        case 2:
+            imageName = "hop.png"
+            break
+        case 3:
+            imageName = "drop.png"
+            break
+        case 4:
+            imageName = "malt.png"
+            break
+        default:
+            break
+        }
+        
+        cell.useTool(tool, imageName)
         cell.backgroundColor = UIColor(netHex: BSColor.brewSnobBackgroundColor())
         
         return cell
@@ -69,30 +90,30 @@ class BrewToolsViewController : UIViewController {
     func tableView(_ tableView: UITableView, didSelectRowAtIndexPath indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true);
         
-        let tool: NSString = tools[(indexPath as NSIndexPath).row]
+        let tool: String = tools[(indexPath as NSIndexPath).row]
         let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
         
-        if tool.isEqual(to: "Simple Calculators") {
+        if tool.isEqual("Simple Calculators") {
             
             let nc = storyboard.instantiateViewController(withIdentifier: "ABVViewController") as! ABVViewController
             self.navigationController?.pushViewController(nc, animated: true)
             
-        } else if tool.isEqual(to: "IBU Calculator") {
+        } else if tool.isEqual("IBU Calculator") {
             
             let nc = storyboard.instantiateViewController(withIdentifier: "IBUViewController") as! IBUViewController
             self.navigationController?.pushViewController(nc, animated: true)
             
-        } else if tool.isEqual(to: "Mash Water and Sparge Calculator") {
+        } else if tool.isEqual("Mash Water and Sparge Calculator") {
             
             let nc = storyboard.instantiateViewController(withIdentifier: "MashWaterViewController") as! MashWaterViewController
             self.navigationController?.pushViewController(nc, animated: true)
             
-        } else if tool.isEqual(to: "Mash Infusion Calculator") {
+        } else if tool.isEqual("Mash Infusion Calculator") {
             
             let nc = storyboard.instantiateViewController(withIdentifier: "MashInfusionViewController") as! MashInfusionViewController
             self.navigationController?.pushViewController(nc, animated: true)
             
-        } else if tool.isEqual(to: "Brew Timer") {
+        } else if tool.isEqual("Brew Timer") {
             
             let nc = storyboard.instantiateViewController(withIdentifier: "BTTimerViewController") as! BTTimerViewController
             self.navigationController?.pushViewController(nc, animated: true)

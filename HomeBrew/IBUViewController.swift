@@ -294,7 +294,7 @@ class IBUViewController : UIViewController {
             totalIbu = calculateBitterness(alpha, weight: weight, time: time)
         }
         
-        self.ibuTextField.text = NSString(format: "%.2f %", totalIbu) as String
+        self.ibuTextField.text = String(format: "%.2f %", totalIbu)
     }
     
     func calculateBitterness(_ alpha: Float, weight: Float, time: Float) -> Float {

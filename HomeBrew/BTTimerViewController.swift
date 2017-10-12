@@ -71,8 +71,7 @@ class BTTimerViewController : UIViewController {
     }
     
     // #pragma mark - Private
-    func startBrewTimer()
-    {
+    func startBrewTimer() {
         self.minutes = (self.minTextField.text! as NSString).doubleValue
         UserDefaults.standard.set(self.minutes, forKey: "inputTime")
         
@@ -81,14 +80,11 @@ class BTTimerViewController : UIViewController {
         self.brewTimer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(BTTimerViewController.countdown), userInfo: nil, repeats: true)
     }
     
-    @objc func countdown()
-    {
+    @objc func countdown() {
         if (self.startTime > 0) {
-            
             self.startTime -= 1
             
             let timeLong: CLong = lround(self.startTime)
-            
             let minutes = (timeLong / 60) % 60
             let seconds = timeLong % 60
             
@@ -103,7 +99,6 @@ class BTTimerViewController : UIViewController {
     }
     
     @objc func becameActive() {
-        
         // reset UI
         self.minTextField.text = "\(UserDefaults.standard.double(forKey: "inputTime"))"
         
@@ -120,8 +115,7 @@ class BTTimerViewController : UIViewController {
         self.brewTimer.invalidate()
     }
     
-    func applyStyle()
-    {
+    func applyStyle() {
         self.view.backgroundColor = UIColor(netHex: BSColor.brewSnobBackgroundColor())
         self.topView.backgroundColor = UIColor(netHex: BSColor.brewSnobGreen())
         

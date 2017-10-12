@@ -39,10 +39,8 @@ class MainViewController: UIViewController, UIPopoverPresentationControllerDeleg
     func applyStyle() {
         buttonView.layer.cornerRadius = 4.0
         buttonView.backgroundColor = UIColor.clear
-        //buttonView.backgroundColor = UIColor(netHex: 0x328432)
         
         self.view.backgroundColor = UIColor(netHex: BSColor.brewSnobBackgroundColor())
-        
         self.navigationController?.navigationBar.barTintColor = UIColor(netHex: 0x328432)
         
         for button in buttonArray {
@@ -115,7 +113,7 @@ class LicenseViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-         let str = "Icons made by Freepik at www.freepik.com from www.flaticon.com is licensed by Creative Commons BY 3.0 at creativecommons.org/licenses/by/3.0\n\nIcons made by Chanut is Industries at www.flaticon.com/authors/chanut-is-industries from www.flaticon.com is licensed by Commons BY 3.0 at http://creativecommons.org/licenses/by/3.0"
+         let str = "Icons made by Freepik at www.freepik.com from www.flaticon.com \nLicensed by Creative Commons BY 3.0 at creativecommons.org/licenses/by/3.0\n\nIcons made by Chanut Industries at www.flaticon.com/authors/chanut-is-industries from www.flaticon.com \nLicensed by Commons BY 3.0 at http://creativecommons.org/licenses/by/3.0"
         
         self.textView.text = str
         self.textView.font = UIFont.systemFont(ofSize: 16)

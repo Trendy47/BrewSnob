@@ -27,23 +27,10 @@ class CustomTableViewCell: UITableViewCell {
         iconImageView.image = UIImage(named: imageName)
     }
     
-    func useTool(_ tool: NSString) {
-        cellTextLabel.text = tool as String
+    func useTool(_ name: String, _ imageName: String) {
+        cellTextLabel.text = name
         cellTextLabel.textColor = UIColor.black
         cellTextLabel.font = UIFont.systemFont(ofSize: 18)
-        
-        var imageName = ""
-        if (tool == "Simple Calculators") {
-            imageName = "calculator.png"
-        } else if (tool == "IBU Calculator") {
-            imageName = "hop.png"
-        } else if (tool == "Mash Water and Sparge Calculator") {
-            imageName = "drop.png"
-        } else if (tool == "Mash Infusion Calculator") {
-            imageName = "malt.png"
-        } else if (tool == "Brew Timer") {
-            imageName = "hour_glass.png"
-        }
         
         iconImageView.image = UIImage(named: imageName)
     }

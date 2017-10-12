@@ -200,10 +200,10 @@ class MashInfusionViewController : UIViewController {
         let mashInGallons: Float = mashInQuarts * 0.25
         
         if (isMetric) {
-            self.boilLTextField.text = NSString(format: "%.2f", mashInQuarts) as String
+            self.boilLTextField.text = String(format: "%.2f", mashInQuarts)
         } else {
-            self.boilQtTextField.text = NSString(format: "%.2f", mashInQuarts) as String
-            self.boilGalTextField.text = NSString(format: "%.2f", mashInGallons) as String
+            self.boilQtTextField.text = String(format: "%.2f", mashInQuarts)
+            self.boilGalTextField.text = String(format: "%.2f", mashInGallons)
         }
     }
     

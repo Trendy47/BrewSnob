@@ -102,8 +102,8 @@ class ABVViewController: UIViewController {
         let abv: Float = (og - fg) * 131
         let abw: Float = 0.789 * abv / (1 - 0.211 * abv)
         
-        self.abvTextField.text = NSString(format: "%.2f %", abv) as String
-        self.abwTextField.text = NSString(format: "%.2f %", abw) as String
+        self.abvTextField.text = String(format: "%.2f %", abv)
+        self.abwTextField.text = String(format: "%.2f %", abw)
     }
     
     @objc func calculatePPG() {
@@ -113,8 +113,8 @@ class ABVViewController: UIViewController {
         let ppg: Float = (((cg + fg) / 2) / 100) * 46
         let pe: Float = (ppg / 1000) + 1
         
-        self.ppgMpeTextField.text = NSString(format: "%.0f", ppg) as String
-        self.peMpeTextField.text = NSString(format: "%.3f", pe) as String
+        self.ppgMpeTextField.text = String(format: "%.0f", ppg)
+        self.peMpeTextField.text = String(format: "%.3f", pe)
     }
     
     @objc func calculateColor() {
@@ -126,9 +126,9 @@ class ABVViewController: UIViewController {
             EBC = SRM * 1.97
             L = (SRM + 0.76) / 1.3546
             
-            self.srmCCTextField.text = NSString(format: "%.1f", SRM) as String
-            self.loviCCTextField.text = NSString(format: "%.1f", L) as String
-            self.ebCCTextField.text = NSString(format: "%.1f", EBC) as String
+            self.srmCCTextField.text = String(format: "%.1f", SRM)
+            self.loviCCTextField.text = String(format: "%.1f", L)
+            self.ebCCTextField.text = String(format: "%.1f", EBC)
             
             SRM = 0;
             L = 0;
@@ -137,9 +137,9 @@ class ABVViewController: UIViewController {
             SRM = (1.3546 * L) - 0.76
             EBC = SRM * 1.97
             
-            self.srmCCTextField.text = NSString(format: "%.1f", SRM) as String
-            self.loviCCTextField.text = NSString(format: "%.1f", L) as String
-            self.ebCCTextField.text = NSString(format: "%.1f", EBC) as String
+            self.srmCCTextField.text = String(format: "%.1f", SRM)
+            self.loviCCTextField.text = String(format: "%.1f", L)
+            self.ebCCTextField.text = String(format: "%.1f", EBC)
             
             SRM = 0;
             L = 0;
@@ -148,9 +148,9 @@ class ABVViewController: UIViewController {
             SRM = EBC * 0.508
             L = (SRM + 0.76) / 1.3546
             
-            self.srmCCTextField.text = NSString(format: "%.1f", SRM) as String
-            self.loviCCTextField.text = NSString(format: "%.1f", L) as String
-            self.ebCCTextField.text = NSString(format: "%.1f", EBC) as String
+            self.srmCCTextField.text = String(format: "%.1f", SRM)
+            self.loviCCTextField.text = String(format: "%.1f", L)
+            self.ebCCTextField.text = String(format: "%.1f", EBC)
             
             SRM = 0;
             L = 0;
