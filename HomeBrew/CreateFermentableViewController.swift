@@ -94,7 +94,7 @@ class CreateFermentableViewController: UIViewController, UIPickerViewDataSource,
         var index = -1
         if (isEditingFermentable)
         {
-            let repo = FermentableObject.sharedInstance.fermentables
+            let repo = RecipeManager.sharedInstance.fermentList
             index = repo.index(of: self.fermentable)
             repo.remove(self.fermentable)
         }
@@ -114,7 +114,7 @@ class CreateFermentableViewController: UIViewController, UIPickerViewDataSource,
         fermentDict.setValue(L, forKey: "L")
         fermentDict.setValue(usage, forKey: "usage")
         
-        FermentableObject.sharedInstance.createObject(fermentDict, index: index)
+        RecipeManager.sharedInstance.fermentList.insert(FermentableObject(fermentDict), at: index)
         self.view.makeToast(message: "Fermentable Created", duration: 2, position: HRToastPositionCenter as AnyObject)
         self.dismiss(animated: true, completion: nil)
     }

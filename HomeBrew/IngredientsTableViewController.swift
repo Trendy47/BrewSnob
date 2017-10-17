@@ -21,24 +21,23 @@ class IngredientsTableViewController: UIViewController, UITableViewDelegate, UIT
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.tableView.rowHeight = 60.0
-        self.tableView.tableFooterView = UIView()
-        self.tableView.tableHeaderView = UIView()
-        
         self.tableView.delegate = self
         self.tableView.dataSource = self
+        
+        tableView.rowHeight = UITableViewAutomaticDimension
+        tableView.estimatedRowHeight = 140
+        
+        let fermentables = RecipeManager.sharedInstance.fermentList
+        let hops = RecipeManager.sharedInstance.hopList
+        let yeast = RecipeManager.sharedInstance.yeastList
+        
+        self.tableData = [fermentables, hops, yeast]
         
         let swipeGesture = UISwipeGestureRecognizer(target: self, action: #selector(IngredientsTableViewController.goBack(_:)))
         swipeGesture.direction = UISwipeGestureRecognizerDirection.right
         self.view.addGestureRecognizer(swipeGesture)
         
         applyStyle()
-        
-        let fermentables = FermentableObject.sharedInstance.fermentables
-        let hops = HopsObject.sharedInstance.hops
-        let yeast = YeastObject.sharedInstance.yeasts
-        
-        self.tableData = [fermentables, hops, yeast]
     }
     
     override func didReceiveMemoryWarning() {
@@ -75,11 +74,10 @@ class IngredientsTableViewController: UIViewController, UITableViewDelegate, UIT
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
         if (indexPath as NSIndexPath).section == 0 {
             let cell = tableView.dequeueReusableCell(withIdentifier: "fermentableCell", for: indexPath) as! FermentableCell
             
-            let fermentable = FermentableObject.sharedInstance.fermentables[(indexPath as NSIndexPath).row]
+            let fermentable = RecipeManager.sharedInstance.fermentList[(indexPath as NSIndexPath).row]
             cell.createFermentableCell(fermentable as! NSDictionary)
             
             return cell
@@ -88,7 +86,7 @@ class IngredientsTableViewController: UIViewController, UITableViewDelegate, UIT
         else if (indexPath as NSIndexPath).section == 1 {
             let cell = tableView.dequeueReusableCell(withIdentifier: "hopsCell", for: indexPath) as! HopsCell
             
-            let hop = HopsObject.sharedInstance.hops[(indexPath as NSIndexPath).row]
+            let hop = RecipeManager.sharedInstance.hopList[(indexPath as NSIndexPath).row]
             cell.createHopsCell(hop as! NSDictionary)
             
             return cell
@@ -97,7 +95,7 @@ class IngredientsTableViewController: UIViewController, UITableViewDelegate, UIT
         else if (indexPath as NSIndexPath).section == 2 {
             let cell = tableView.dequeueReusableCell(withIdentifier: "yeastCell", for: indexPath) as! YeastCell
             
-            let yeast = YeastObject.sharedInstance.yeasts[(indexPath as NSIndexPath).row]
+            let yeast = RecipeManager.sharedInstance.yeastList[(indexPath as NSIndexPath).row]
             cell.createYeastCell(yeast as! NSDictionary)
             
             return cell
@@ -133,21 +131,20 @@ class IngredientsTableViewController: UIViewController, UITableViewDelegate, UIT
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
         
         if editingStyle == .delete {
-            
             self.tableView.beginUpdates()
             
             if (indexPath as NSIndexPath).section == 0 {
-                FermentableObject.sharedInstance.fermentables.removeObject(at: (indexPath as NSIndexPath).row)
+                RecipeManager.sharedInstance.fermentList.removeObject(at: (indexPath as NSIndexPath).row)
                 self.tableView.deleteRows(at: [indexPath], with: .automatic)
             }
             
             else if (indexPath as NSIndexPath).section == 1 {
-                HopsObject.sharedInstance.hops.removeObject(at: (indexPath as NSIndexPath).row)
+                RecipeManager.sharedInstance.hopList.removeObject(at: (indexPath as NSIndexPath).row)
                 self.tableView.deleteRows(at: [indexPath], with: .automatic)
             }
             
             else if (indexPath as NSIndexPath).section == 2 {
-                YeastObject.sharedInstance.yeasts.removeObject(at: (indexPath as NSIndexPath).row)
+                RecipeManager.sharedInstance.yeastList.removeObject(at: (indexPath as NSIndexPath).row)
                 self.tableView.deleteRows(at: [indexPath], with: .automatic)
             }
             

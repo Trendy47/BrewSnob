@@ -27,7 +27,7 @@
 		DD861CDE1D0A29C200DF8C9F /* BSString.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD861CDD1D0A29C200DF8C9F /* BSString.swift */; };
 		DD8F5F7C1C729057008E9A7A /* back_arrow_white.png in Resources */ = {isa = PBXBuildFile; fileRef = DD8F5F7B1C729057008E9A7A /* back_arrow_white.png */; };
 		DD9534EB1C7D56B800977F4D /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9534EA1C7D56B800977F4D /* CustomTableViewCell.swift */; };
-		DD9F51981C9DDFBB0074B1B4 /* CustomRecipeObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9F51971C9DDFBB0074B1B4 /* CustomRecipeObject.swift */; };
+		DD9F51981C9DDFBB0074B1B4 /* RecipeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9F51971C9DDFBB0074B1B4 /* RecipeManager.swift */; };
 		DD9F519B1C9E089A0074B1B4 /* YeastObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9F519A1C9E089A0074B1B4 /* YeastObject.swift */; };
 		DD9F519D1C9E09940074B1B4 /* YeastCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9F519C1C9E09940074B1B4 /* YeastCell.swift */; };
 		DD9F51A11C9E0B590074B1B4 /* CreateYeastViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9F51A01C9E0B590074B1B4 /* CreateYeastViewController.swift */; };
@@ -105,7 +105,7 @@
 		DD861CDD1D0A29C200DF8C9F /* BSString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BSString.swift; sourceTree = "<group>"; };
 		DD8F5F7B1C729057008E9A7A /* back_arrow_white.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back_arrow_white.png; sourceTree = "<group>"; };
 		DD9534EA1C7D56B800977F4D /* CustomTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
-		DD9F51971C9DDFBB0074B1B4 /* CustomRecipeObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomRecipeObject.swift; sourceTree = "<group>"; };
+		DD9F51971C9DDFBB0074B1B4 /* RecipeManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipeManager.swift; sourceTree = "<group>"; };
 		DD9F519A1C9E089A0074B1B4 /* YeastObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YeastObject.swift; sourceTree = "<group>"; };
 		DD9F519C1C9E09940074B1B4 /* YeastCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YeastCell.swift; sourceTree = "<group>"; };
 		DD9F51A01C9E0B590074B1B4 /* CreateYeastViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateYeastViewController.swift; sourceTree = "<group>"; };
@@ -250,14 +250,30 @@
 			name = Fermentables;
 			sourceTree = "<group>";
 		};
+		DD7735CA1F95A03F003A9CF4 /* Brewtils */ = {
+			isa = PBXGroup;
+			children = (
+				DDBE499C1CDE749700DD54E5 /* BSColor.swift */,
+				DD861CDD1D0A29C200DF8C9F /* BSString.swift */,
+				DD5555511D578E8300D9961A /* BSView.swift */,
+			);
+			name = Brewtils;
+			sourceTree = "<group>";
+		};
+		DD7735CB1F95A0A7003A9CF4 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				DD9534EA1C7D56B800977F4D /* CustomTableViewCell.swift */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
 		DD84650F1DAC67DB00EA1CD1 /* Model */ = {
 			isa = PBXGroup;
 			children = (
 				DDC593A61ADCB67D0021336D /* Beer.swift */,
-				DDBE499C1CDE749700DD54E5 /* BSColor.swift */,
-				DD861CDD1D0A29C200DF8C9F /* BSString.swift */,
-				DD5555511D578E8300D9961A /* BSView.swift */,
 				DDFC1C4D1D0C72090075545D /* BeerXML.swift */,
+				DD9F51971C9DDFBB0074B1B4 /* RecipeManager.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -265,7 +281,6 @@
 		DD9C9F411BCADD2C00940F71 /* Brews */ = {
 			isa = PBXGroup;
 			children = (
-				DD9F51971C9DDFBB0074B1B4 /* CustomRecipeObject.swift */,
 				DD73194C1B9B876700A2EE1E /* BeerListViewController.swift */,
 				DD73194E1B9B8EDE00A2EE1E /* BeerRecipeViewController.swift */,
 				DD5CF49C1BE696C200BBC597 /* CustomBrewViewController.swift */,
@@ -324,10 +339,11 @@
 		DDC593811ADCB0FB0021336D /* HomeBrew */ = {
 			isa = PBXGroup;
 			children = (
+				DD7735CB1F95A0A7003A9CF4 /* UI */,
+				DD7735CA1F95A03F003A9CF4 /* Brewtils */,
 				DD84650F1DAC67DB00EA1CD1 /* Model */,
 				DDC593841ADCB0FB0021336D /* AppDelegate.swift */,
 				DDC593861ADCB0FB0021336D /* MainViewController.swift */,
-				DD9534EA1C7D56B800977F4D /* CustomTableViewCell.swift */,
 				DD440DB41D9B58B800393A81 /* Brewmeries */,
 				DD9C9F411BCADD2C00940F71 /* Brews */,
 				DD9C9F421BCADD3A00940F71 /* BrewTools */,
@@ -612,7 +628,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DDB008E01DB6F62900DD2AEA /* BSMapsController.swift in Sources */,
-				DD9F51981C9DDFBB0074B1B4 /* CustomRecipeObject.swift in Sources */,
+				DD9F51981C9DDFBB0074B1B4 /* RecipeManager.swift in Sources */,
 				DDA76ADD1BFD77E700E7225C /* MashWaterViewController.swift in Sources */,
 				DDDC4D961C97B1B7005D36C5 /* HopsObject.swift in Sources */,
 				DDC5CCFB1D3718D5009833D8 /* BTTimerViewController.swift in Sources */,
@@ -807,7 +823,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
 				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
@@ -833,7 +849,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
 				SWIFT_VERSION = 4.0;
 			};
 			name = Release;

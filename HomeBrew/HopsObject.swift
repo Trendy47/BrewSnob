@@ -10,8 +10,6 @@ import Foundation
 
 class HopsObject {
     
-    static let sharedInstance = HopsObject()
-    
     var weight: String?
     var variety: String?
     var type: String?
@@ -20,9 +18,7 @@ class HopsObject {
     var aa: String?
     var ibu: String?
     
-    var hops: NSMutableArray = []
-    
-    func createObject(_ dictionary: NSDictionary, index: Int) {
+    init(_ dictionary: NSDictionary) {
         weight = dictionary["weight"] as? String
         variety = dictionary["variety"] as? String
         type = dictionary["type"] as? String
@@ -30,17 +26,5 @@ class HopsObject {
         time = dictionary["time"] as? String
         aa = dictionary["aa"] as? String
         ibu = dictionary["ibu"] as? String
-        
-        if (index == -1) {
-            hops.add(dictionary)
-        } else {
-            hops.insert(dictionary, at: index)
-        }
-    }
-    
-    func clearHops() {
-        if (hops.count > 0) {
-            hops = []
-        }
     }
 }

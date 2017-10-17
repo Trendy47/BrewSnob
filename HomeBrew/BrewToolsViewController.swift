@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-class BrewToolsViewController : UIViewController {
+class BrewToolsViewController : UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     @IBOutlet weak var topView: UIView!
     @IBOutlet var tableView: UITableView!
@@ -42,7 +42,7 @@ class BrewToolsViewController : UIViewController {
     }
     
     // #pragma mark - UITableView
-    func numberOfSectionsInTableView(_ tableView: UITableView) -> Int {
+    func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
     
@@ -50,7 +50,7 @@ class BrewToolsViewController : UIViewController {
         return tools.count
     }
     
-    func tableView(_ tableView: UITableView, cellForRowAtIndexPath indexPath: IndexPath) -> UITableViewCell {
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "brewToolsCell", for: indexPath) as! CustomTableViewCell
         
         let tool = tools[indexPath.row]
@@ -82,12 +82,12 @@ class BrewToolsViewController : UIViewController {
         return cell
     }
     
-    func tableView(_ tableView: UITableView, canEditRowAtIndexPath indexPath: IndexPath) -> Bool {
+    func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
         return false
     }
     
     // #pragma mark - UITableViewDelegate
-    func tableView(_ tableView: UITableView, didSelectRowAtIndexPath indexPath: IndexPath) {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true);
         
         let tool: String = tools[(indexPath as NSIndexPath).row]
@@ -120,12 +120,10 @@ class BrewToolsViewController : UIViewController {
         }
     }
 
-    
     // #pragma mark - Private
     func applyStyle() {
         self.tableView.backgroundColor = UIColor(netHex: BSColor.brewSnobBackgroundColor())
         self.tableView.rowHeight = 85.0
-        self.tableView.tableFooterView = UIView()
         
         self.view.backgroundColor = UIColor(netHex: BSColor.brewSnobBackgroundColor())
         self.topView.backgroundColor = UIColor(netHex: BSColor.brewSnobGreen())

@@ -38,7 +38,6 @@ class CustomBrewViewController: UIViewController, UITextFieldDelegate, UITextVie
     @IBOutlet weak var hopCountLabel: UILabel!
     @IBOutlet weak var yeastCountLabel: UILabel!
     
-    
     @IBOutlet weak var unitSegmentControl: UISegmentedControl!
     @IBOutlet weak var viewSpecsBtn: UIButton!
     @IBOutlet weak var specificationsView: UIView!
@@ -68,7 +67,7 @@ class CustomBrewViewController: UIViewController, UITextFieldDelegate, UITextVie
     
     var isMetric: Bool = false
     
-    let customBrew = CustomRecipeObject.sharedInstance
+    let customBrew = RecipeManager.sharedInstance
     var editBeer:Beer!
     
     var dTextViewClicked: Bool = false
@@ -81,9 +80,9 @@ class CustomBrewViewController: UIViewController, UITextFieldDelegate, UITextVie
         UIView.hr_setToastThemeColor(color: themeColor)
         
         // Clear arrays on load
-        FermentableObject.sharedInstance.clearFermentables()
-        HopsObject.sharedInstance.clearHops()
-        YeastObject.sharedInstance.clearYeasts()
+        RecipeManager.sharedInstance.clearFermentables()
+        RecipeManager.sharedInstance.clearHops()
+        RecipeManager.sharedInstance.clearYeasts()
         
         applyStyle()
         updateButtonText()
@@ -174,7 +173,7 @@ class CustomBrewViewController: UIViewController, UITextFieldDelegate, UITextVie
             fermentDict.setValue(lovi, forKey: "L")
             fermentDict.setValue(usage, forKey: "usage")
             
-            FermentableObject.sharedInstance.createObject(fermentDict, index: fIndex)
+            RecipeManager.sharedInstance.fermentList.insert(FermentableObject(fermentDict), at: fIndex)
             fIndex += 1
         }
         
@@ -207,7 +206,7 @@ class CustomBrewViewController: UIViewController, UITextFieldDelegate, UITextVie
             hopDict.setValue(time, forKey: "time")
             hopDict.setValue(usage, forKey: "usage")
             
-            HopsObject.sharedInstance.createObject(hopDict, index: hIndex)
+            RecipeManager.sharedInstance.hopList.insert(HopsObject(hopDict), at: hIndex)
             hIndex += 1
         }
         
@@ -224,7 +223,7 @@ class CustomBrewViewController: UIViewController, UITextFieldDelegate, UITextVie
             yeastDict.setValue(name, forKey: "name")
             yeastDict.setValue(attenuation, forKey: "attenuation")
             
-            YeastObject.sharedInstance.createObject(yeastDict, index: yIndex)
+            RecipeManager.sharedInstance.yeastList.insert(YeastObject(yeastDict), at: yIndex)
             yIndex += 1
         }
         
@@ -259,7 +258,7 @@ class CustomBrewViewController: UIViewController, UITextFieldDelegate, UITextVie
     }
     
     @IBAction func didChangeUnitSegmentControl(_ sender: UISegmentedControl) {
-        let repo = CustomRecipeObject.sharedInstance
+        let repo = RecipeManager.sharedInstance
         let batchText = (self.batchSizeTextField.text?.floatValue)!
         let boilText = (self.boilSizeTextField.text?.floatValue)!
         
@@ -315,7 +314,7 @@ class CustomBrewViewController: UIViewController, UITextFieldDelegate, UITextVie
     }
     
     @IBAction func didTapViewSpecsBtn(_ sender: AnyObject) {
-        let repo = CustomRecipeObject.sharedInstance
+        let repo = RecipeManager.sharedInstance
         repo.calculateSpecifications()
         
         var unit: String = ""
@@ -365,7 +364,7 @@ class CustomBrewViewController: UIViewController, UITextFieldDelegate, UITextVie
             return
         }
         
-        let created: Bool = CustomRecipeObject.sharedInstance.createBeerRecipe()
+        let created: Bool = RecipeManager.sharedInstance.createBeerRecipe()
         if (created) {
             self.view.makeToast(message: "Brew recipe created!", duration: 2, position: HRToastPositionCenter as AnyObject)
         } else {
@@ -418,16 +417,15 @@ class CustomBrewViewController: UIViewController, UITextFieldDelegate, UITextVie
     }
     
     func updateButtonText() {
-        
-        let fermentCount = FermentableObject.sharedInstance.fermentables.count
+        let fermentCount = RecipeManager.sharedInstance.fermentList.count
         let fCountStr = "Add Fermentables \(fermentCount)"
         self.fermentCountLabel.text = fCountStr
         
-        let hopCount = HopsObject.sharedInstance.hops.count
+        let hopCount = RecipeManager.sharedInstance.hopList.count
         let hCountStr = "Add Hops \(hopCount)"
         self.hopCountLabel.text = hCountStr
         
-        let yeastCount = YeastObject.sharedInstance.yeasts.count
+        let yeastCount = RecipeManager.sharedInstance.yeastList.count
         let yCountStr = "Add Yeast \(yeastCount)"
         self.yeastCountLabel.text = yCountStr
     }

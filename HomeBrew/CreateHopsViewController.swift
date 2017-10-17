@@ -99,7 +99,7 @@ class CreateHopsViewController: UIViewController, UIPickerViewDelegate, UIPicker
     @IBAction func didTapCreateBtn(_ sender: AnyObject) {
         var index = -1
         if (self.isEditingHops) {
-            let repo = HopsObject.sharedInstance.hops
+            let repo = RecipeManager.sharedInstance.hopList
             index = repo.index(of: self.hop)
             repo.remove(self.hop)
         }
@@ -112,7 +112,7 @@ class CreateHopsViewController: UIViewController, UIPickerViewDelegate, UIPicker
         let usage: String? = self.usageTextField.text
         let unit: String? = (self.unitSegmentedControl.selectedSegmentIndex == 0 ? "US" : "Metric")
         
-        let repo = CustomRecipeObject.sharedInstance
+        let repo = RecipeManager.sharedInstance
         repo.calculateSpecifications()
         let ibu: Float = repo.calculateBitterness(aa, weight: weight, time: time, unit: unit!, type: type!)
         
@@ -126,7 +126,7 @@ class CreateHopsViewController: UIViewController, UIPickerViewDelegate, UIPicker
         hopDict.setValue(time, forKey: "time")
         hopDict.setValue(usage, forKey: "usage")
         
-        HopsObject.sharedInstance.createObject(hopDict, index: index)
+        RecipeManager.sharedInstance.hopList.insert(HopsObject(hopDict), at: index)
         self.view.makeToast(message: "Hop Created", duration: 2, position: HRToastPositionCenter as AnyObject)
         self.dismiss(animated: true, completion: nil)
     }

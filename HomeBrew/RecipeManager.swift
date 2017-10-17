@@ -8,9 +8,9 @@
 
 import Foundation
 
-class CustomRecipeObject {
+class RecipeManager {
     
-    static let sharedInstance = CustomRecipeObject()
+    static let sharedInstance = RecipeManager()
     
     var brewName: String?
     var recipeType: String?
@@ -28,6 +28,12 @@ class CustomRecipeObject {
     var directions: String?
     var unit: String = "US"
     
+    // list of objects
+    var fermentList: NSMutableArray = []
+    var hopList: NSMutableArray = []
+    var yeastList: NSMutableArray = []
+    
+    // dictionaries for objects
     var fermentableObjects = Dictionary<String, AnyObject>()
     var hopsObjects = Dictionary<String, AnyObject>()
     var yeastObjects =  Dictionary<String, AnyObject>()
@@ -53,9 +59,8 @@ class CustomRecipeObject {
         }
         
         // Get attenuation
-        let yeasts = YeastObject.sharedInstance.yeasts
-        if (yeasts.count > 0) {
-            for yeast in yeasts {
+        if (yeastList.count > 0) {
+            for yeast in yeastList {
                 let dict = (yeast as AnyObject)
                 let attenuation: Float = (dict["attenuation"] as? Float)! / 100
                 tempattenuation += attenuation
@@ -70,9 +75,7 @@ class CustomRecipeObject {
         * SRM = 1.49 * (MCU * 0.69)
         */
      
-        let fermentables: NSMutableArray = FermentableObject.sharedInstance.fermentables
-        for dictionary in fermentables {
-            
+        for dictionary in fermentList {
             let dict = (dictionary as AnyObject)
             
             var weight: Float = (dict["weight"] as? Float)!
@@ -127,8 +130,7 @@ class CustomRecipeObject {
         * IBU
         */
         
-        let hops = HopsObject.sharedInstance.hops
-        for hop in hops {
+        for hop in hopList {
             let ibu = (hop as AnyObject)["ibu"]
             totalibu += ibu as! Float
         }
@@ -174,10 +176,8 @@ class CustomRecipeObject {
     
     func createFermentablesStrings() -> String {
         var fermentablesStr = ""
-        let fermentables: NSMutableArray = FermentableObject.sharedInstance.fermentables
         
-        for dictionary in fermentables {
-            
+        for dictionary in fermentList {
             let dict = (dictionary as AnyObject)
             
             let fname = dict["name"] as! String
@@ -199,10 +199,8 @@ class CustomRecipeObject {
     
     func createHopsString() -> String {
         var hopsStr = ""
-        let hops: NSMutableArray = HopsObject.sharedInstance.hops
         
-        for dictionary in hops {
-            
+        for dictionary in hopList {
             let dict = (dictionary as AnyObject)
             
             let hname = dict["variety"] as! String
@@ -225,10 +223,8 @@ class CustomRecipeObject {
     
     func createYeastString() -> String {
         var yeastStr = ""
-        let yeasts: NSMutableArray = YeastObject.sharedInstance.yeasts
         
-        for dictionary in yeasts {
-            
+        for dictionary in yeastList {
             let dict = (dictionary as AnyObject)
             
             let yname = dict["name"] as! String
@@ -319,16 +315,38 @@ class CustomRecipeObject {
         
         // Empty dictionaries
         if (isCreated) {
-            FermentableObject.sharedInstance.fermentables.removeAllObjects()
-            HopsObject.sharedInstance.hops.removeAllObjects()
-            YeastObject.sharedInstance.yeasts.removeAllObjects()
+            fermentList.removeAllObjects()
+            hopList.removeAllObjects()
+            yeastList.removeAllObjects()
         }
         
         return isCreated
     }
     
+    // end region //
     
-    // #pragma mark - Conversion
+    // #pragma mark - list functions
+    func clearFermentables() {
+        if (fermentList.count > 0) {
+            fermentList = []
+        }
+    }
+    
+    func clearHops() {
+        if (hopList.count > 0) {
+            hopList = []
+        }
+    }
+    
+    func clearYeasts() {
+        if (yeastList.count > 0) {
+            yeastList = []
+        }
+    }
+    
+    // end region //
+    
+    // #pragma mark - Conversion functions
     func convertLitersToGallons(_ liters: Float) -> Float {
         let gallons: Float = liters / 3.78541
         return gallons
@@ -366,4 +384,6 @@ class CustomRecipeObject {
     func convertFtempToCtemp(_ F: Float) -> Float {
         return (F - 32) / 1.8
     }
+    
+    // end region //
 }

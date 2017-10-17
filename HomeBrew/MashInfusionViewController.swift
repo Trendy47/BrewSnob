@@ -84,7 +84,7 @@ class MashInfusionViewController : UIViewController {
     
     @IBAction func didChangeUnitType(_ sender: UISegmentedControl) {
         
-        let customObject = CustomRecipeObject.sharedInstance
+        let customObject = RecipeManager.sharedInstance
         
         if (sender.selectedSegmentIndex == 0) {
             isMetric = false

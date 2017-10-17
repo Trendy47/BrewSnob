@@ -66,9 +66,9 @@ class CreateYeastViewController: UIViewController {
     }
     
     @IBAction func didTapCreateBtn(_ sender: AnyObject) {
-        var index = -1
+        var index = 0
         if (self.isEditingYeast) {
-            let repo = YeastObject.sharedInstance.yeasts
+            let repo = RecipeManager.sharedInstance.yeastList
             index = repo.index(of: self.yeast)
             repo.remove(self.yeast)
         }
@@ -80,7 +80,7 @@ class CreateYeastViewController: UIViewController {
         yeastDict.setValue(name, forKey: "name")
         yeastDict.setValue(attenuation, forKey: "attenuation")
         
-        YeastObject.sharedInstance.createObject(yeastDict, index: index)
+        RecipeManager.sharedInstance.yeastList.insert(YeastObject(yeastDict), at: index)
         self.view.makeToast(message: "Yeast Created", duration: 2, position: HRToastPositionCenter as AnyObject)
         self.dismiss(animated: true, completion: nil)
     }

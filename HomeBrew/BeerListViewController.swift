@@ -109,8 +109,7 @@ class BeerListViewController: UIViewController, UITableViewDataSource, UITableVi
         return beerArray.count
     }
     
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
-    {
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "beerRecipeCell", for: indexPath) as! CustomTableViewCell
         
         let beer: Beer = beerArray[(indexPath as NSIndexPath).row] as! Beer

@@ -10,27 +10,11 @@ import Foundation
 
 class YeastObject {
     
-    static let sharedInstance = YeastObject()
-    
     var name: String?
     var attenuation: Float?
     
-    var yeasts: NSMutableArray = []
-    
-    func createObject(_ dictionary: NSDictionary, index: Int) {
+    init(_ dictionary: NSDictionary) {
         name = dictionary["name"] as? String
         attenuation = dictionary["attenuation"] as? Float
-        
-        if (index == -1) {
-            yeasts.add(dictionary)
-        } else {
-            yeasts.insert(dictionary, at: index)
-        }
-    }
-    
-    func clearYeasts() {
-        if (yeasts.count > 0) {
-            yeasts = []
-        }
     }
 }

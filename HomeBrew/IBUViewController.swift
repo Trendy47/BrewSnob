@@ -60,7 +60,7 @@ class IBUViewController : UIViewController {
     
     var isMetric: Bool = false
     
-    let customObject = CustomRecipeObject.sharedInstance
+    let customObject = RecipeManager.sharedInstance
     
     // #pragma mark - UIViewController
     override func viewDidLoad() {
