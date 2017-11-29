@@ -5,7 +5,7 @@ use_frameworks!
 
 target 'HomeBrew' do
     
-    pod 'SWXMLHash', '~> 4.0.0'
+    pod 'AEXML'
     
   target 'HomeBrewTests' do
     inherit! :search_paths
